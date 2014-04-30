@@ -5,7 +5,7 @@ module PrivatePub
   # It is used inside of PrivatePub.faye_app.
   class FayeExtension
 
-		Redis.current = Redis.new(:host => '127.0.0.1', :port => 6379)
+		Redis.current = Redis.new(:host => 'ec2-54-85-195-32.compute-1.amazonaws.com', :port => 6379)
 		
     # Callback to handle incoming Faye messages. This authenticates both
     # subscribe and publish calls.
